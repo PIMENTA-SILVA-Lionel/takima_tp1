@@ -24,5 +24,5 @@ jobs:
       # Navigate to the project directory and build your app with Maven
       - name: Build and test with Maven
         run: |
-          cd takima_tp1
+          cd takima_tp1/simple-api
           mvn clean install
