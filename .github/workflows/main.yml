@@ -21,7 +21,8 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      # Build your app with Maven
+      # Navigate to the project directory and build your app with Maven
       - name: Build and test with Maven
-        run: mvn clean install
-
+        run: |
+          cd takima_tp1
+          mvn clean install
