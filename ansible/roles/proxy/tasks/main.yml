@@ -1,0 +1,12 @@
+
+# tasks file for roles/reverse-proxy
+- name: Run reverse-proxy
+  docker_container:
+    name: my-reverse-proxy
+    image: lionyti/tp-devops-httpd
+    ports:
+      - "80:80"
+    networks:
+      - name: my_network
+  vars:
+    ansible_python_interpreter: /opt/docker_venv/bin/python3
